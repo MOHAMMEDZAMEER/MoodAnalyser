@@ -24,10 +24,6 @@ public class ModdAnalyser {
 			return "SAD";
 		return "HAPPY";
 	}
-	public Object ModdAnalyser(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	
 }

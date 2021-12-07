@@ -30,5 +30,10 @@ public class MoodTest  {
 			mood.moodAnalyse();
 	}
 	
+		@Test(expected = Exception.class)
+		public void moodEmpty() throws Exception {
+			ModdAnalyser mood = new ModdAnalyser("");
+			mood.moodAnalyse();
 	
+}
 }
