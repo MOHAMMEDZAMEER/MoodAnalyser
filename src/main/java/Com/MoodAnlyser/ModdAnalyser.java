@@ -2,8 +2,7 @@ package Com.MoodAnlyser;
 import Com.MoodAnlyserException.Exception;
 public class ModdAnalyser {
 
-	/*Uc2:-Using try and catch to Null Exception
-	 * */
+	
 	private String message;
 	
 	public ModdAnalyser() {
@@ -25,11 +24,11 @@ public class ModdAnalyser {
 			return "SAD";
 		return "HAPPY";
 	}
-	
-	public Object moodAnalyser(String string) {
+	public Object ModdAnalyser(String string) {
 		// TODO Auto-generated method stub
 		return null;
-	
 	}
+	
+	
 }
 

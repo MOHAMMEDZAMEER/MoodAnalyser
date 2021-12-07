@@ -14,19 +14,21 @@ public class MoodTest  {
 	@Test
 	public void moodSad() {
 		ModdAnalyser M = new ModdAnalyser();
-		assertEquals("SAD",M.moodAnalyser("Iam in Sad MOOD"));
+		assertEquals("SAD",M.ModdAnalyser("Iam in Sad MOOD"));
 	}
 
 	
 	@Test
 	public void moodHappy() {
 		ModdAnalyser M = new ModdAnalyser();
-		assertEquals("HAPPY",M.moodAnalyser("Iam in Any MOOD"));
+		assertEquals("HAPPY",M.ModdAnalyser("Iam in Any MOOD"));
 	}
-	/*Giving Null MOOD it Should Return HAPPY
-	 * */
-	public void moodNull() throws Exception {
-		ModdAnalyser M = new ModdAnalyser();
-		assertEquals("HAPPY", M.moodAnalyse());
+	
+		@Test(expected = Exception.class)
+		public void moodNull() throws Exception {
+			ModdAnalyser mood = new ModdAnalyser();
+			mood.moodAnalyse();
 	}
+	
+	
 }
