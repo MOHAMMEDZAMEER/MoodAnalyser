@@ -25,12 +25,11 @@ public class ModdAnalyser {
 			return "HAPPY";
 		}
 	}
+	
 	public Object moodAnalyser(String string) {
 		// TODO Auto-generated method stub
 		return null;
-	}
-		
-		
 	
 	}
+}
 
