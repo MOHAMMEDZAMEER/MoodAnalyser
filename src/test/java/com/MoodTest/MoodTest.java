@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 import Com.MoodAnlyser.ModdAnalyser;
+import Com.MoodAnlyserException.Exception;
 
 
 /*Testing the Sad and Happy scenarios
@@ -24,7 +25,7 @@ public class MoodTest  {
 	}
 	/*Giving Null MOOD it Should Return HAPPY
 	 * */
-	public void moodNull() {
+	public void moodNull() throws Exception {
 		ModdAnalyser M = new ModdAnalyser();
 		assertEquals("HAPPY", M.moodAnalyse());
 	}

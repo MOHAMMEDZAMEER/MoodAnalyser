@@ -1,5 +1,5 @@
 package Com.MoodAnlyser;
-
+import Com.MoodAnlyserException.Exception;
 public class ModdAnalyser {
 
 	/*Uc2:-Using try and catch to Null Exception
@@ -14,16 +14,16 @@ public class ModdAnalyser {
 		this.message = message;
 	}
 	
-	public String moodAnalyse() throws NullPointerException{
-		try {
-			String words[] = message.split(" ");
-			if (words[3].equalsIgnoreCase("sad"))
-				return "SAD";
-			return "HAPPY";
-		} catch (NullPointerException e) {
-			// TODO Auto-generated catch block
-			return "HAPPY";
-		}
+	public String moodAnalyse() throws  Exception{
+		if (message == null)
+			throw new Exception(" The string is null");
+		if (message.equals(""))
+			throw new Exception(" The string is empty");
+
+		String words[] = message.split(" ");
+		if (words[3].equalsIgnoreCase("sad"))
+			return "SAD";
+		return "HAPPY";
 	}
 	
 	public Object moodAnalyser(String string) {
