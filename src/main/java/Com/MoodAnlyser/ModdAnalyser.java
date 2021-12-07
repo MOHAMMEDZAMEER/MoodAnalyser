@@ -1,5 +1,4 @@
 package Com.MoodAnlyser;
-import Com.MoodAnlyserException.Exception;
 public class ModdAnalyser {
 
 	
@@ -12,19 +11,14 @@ public class ModdAnalyser {
 		super();
 		this.message = message;
 	}
-	
-	public String moodAnalyse() throws  Exception{
-		if (message == null)
-			throw new Exception(" The string is null");
-		if (message.equals(""))
-			throw new Exception(" The string is empty");
+
+	public String moodAnalyse() {
 
 		String words[] = message.split(" ");
 		if (words[3].equalsIgnoreCase("sad"))
 			return "SAD";
 		return "HAPPY";
 	}
-	
 	
 }
 
