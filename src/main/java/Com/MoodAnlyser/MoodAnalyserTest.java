@@ -1,6 +1,6 @@
 package Com.MoodAnlyser;
 
-public class MoodAnalyserTest {
+public class MoodAnalyserTest  {
 
 	public static void main(String[] args) {
 		
