@@ -2,9 +2,8 @@ package Com.MoodAnlyser;
 
 public class ModdAnalyser {
 
-	/*uc1:-Give a message,ability to analyze and respond Happy or Sad Mood
+	/*Uc2:-Using try and catch to Null Exception
 	 * */
-	
 	private String message;
 	
 	public ModdAnalyser() {
